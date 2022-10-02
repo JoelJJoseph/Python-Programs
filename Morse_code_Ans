@@ -1,0 +1,119 @@
+decodeMorse = { 'A':'.-', 'B':'-...',
+                    'C':'-.-.', 'D':'-..', 'E':'.',
+                    'F':'..-.', 'G':'--.', 'H':'....',
+                    'I':'..', 'J':'.---', 'K':'-.-',
+                    'L':'.-..', 'M':'--', 'N':'-.',
+                    'O':'---', 'P':'.--.', 'Q':'--.-',
+                    'R':'.-.', 'S':'...', 'T':'-',
+                    'U':'..-', 'V':'...-', 'W':'.--',
+                    'X':'-..-', 'Y':'-.--', 'Z':'--..',
+                    '1':'.----', '2':'..---', '3':'...--',
+                    '4':'....-', '5':'.....', '6':'-....',
+                    '7':'--...', '8':'---..', '9':'----.',
+                    '0':'-----', ', ':'--..--', '.':'.-.-.-',
+                    '?':'..--..', '/':'-..-.', '-':'-....-',
+                    '(':'-.--.', ')':'-.--.-'}
+
+
+
+
+
+decodemors={ 'A':'di-dah', 'B':'dah-di-di-dit',
+                    'C':'dah-di-dah-dit', 'D':'dah-di-dit', 'E':'dit',
+                    'F':'di-di-dah-dit', 'G':'dah-dah-dit', 'H':'di-di-di-dit',
+                    'I':'di-dit', 'J':'di-dah-dah-dah', 'K':'dah-di-dah',
+                    'L':'di-dah-di-dit', 'M':'dah-dah', 'N':'dah-dit',
+                    'O':'dah-dah-dah', 'P':'di-dah-dah-dit', 'Q':'dah-dah-di-dah',
+                    'R':'di-dah-dit', 'S':'di-di-dit', 'T':'dah',
+                    'U':'di-di-dah', 'V':'di-di-di-dah', 'W':'di-dah-dah',
+                    'X':'dah-di-di-dah', 'Y':'dah-di-dah-dah', 'Z':'dah-dah-di-dit',
+                    '1':'di-dah-dah-dah-dah', '2':'di-di-dah-dah-dah', '3':'di-di-di-dah-dah',
+                    '4':'di-di-di-di-dah', '5':'di-di-di-di-dit', '6':'dah-di-di-di-dit',
+                    '7':'dah-dah-di-di-dit', '8':'dah-dah-dah-di-dit', '9':'dah-dah-dah-dah-dit',
+                    '0':'dah-dah-dah-dah-dah', ', ':'dah-dah-di-di-dah-dah', '.':'di-dah-di-dah-di-dah',
+                    '?':'di-di-dah-dah-di-dit', '/':'dah-di-di-dah-dit', '-':'dah-di-di-di-di-dah',
+                    '(':'dah-di-dah-dah-dit', ')':'dah-di-dah-dah-di-dah'}
+
+
+
+
+
+def encrypt(message):
+    cipher = ''
+    for letter in message:
+        if letter != ' ':
+            cipher += decodeMorse[letter] + ' '
+        else:
+            cipher += ' '
+ 
+    return cipher
+
+
+def encrypt1(message):
+    cipher = ''
+    for letter in message:
+        if letter != ' ':
+            cipher += decodemors[letter] + ' '
+        else:
+            cipher += ' '
+ 
+    return cipher
+
+
+
+
+
+
+
+def decrypt(message):
+ 
+   
+    message += ' '
+ 
+    decipher = ''
+    citext = ''
+    for letter in message:
+ 
+        
+        if (letter != ' '):
+ 
+            
+            i = 0
+ 
+            
+            citext += letter
+ 
+        
+        else:
+            
+            i += 1
+ 
+           
+            if i == 2 :
+ 
+                
+                decipher += ' '
+            else:
+ 
+              
+                decipher += list(decodeMorse.keys())[list(decodeMorse.values()).index(citext)]
+                citext = ''
+ 
+    return decipher
+ 
+
+def main():
+    message = "THIS IS FUN"
+    result = encrypt(message.upper())
+    print (result)
+
+    result1= encrypt1(message)
+    print(result1)
+ 
+    message = "- .... .. ...  .. ...  ..-. ..- -."
+    result = decrypt(message)
+    print (result)
+ 
+
+if __name__ == '__main__':
+  main()
