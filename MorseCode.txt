@@ -1,0 +1,11 @@
+You are a great and excellent investigator, you like creating and solving
+mysteries, puzzles. You got curious about morse code and got hooked to it.
+Morse code had been dominantly used in World War II. Below are tables with details of
+the morse code but with a difference. Instead of using the symbols “.” , “-“ they are
+represented as “di”,”dah” also if dot is at the end it is written as “dit”.
+
+Write a function called decodeMorse() which takes in a string of symbols “.” , “-“ does
+two levels of decode first gives it in for “di”,”dah” , “dit” and then the English alphabet or
+digits or punctuation mark. Your function should print both the levels of decoding.
+Validate the input , the function should not take only “.” , “-“ Note that after each
+character there is a single space and between words two spaces.
