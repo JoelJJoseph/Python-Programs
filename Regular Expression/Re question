@@ -1,0 +1,40 @@
+Write a function named “LoveForIcecreams” which takes in a string and returns
+the number of times the word “Butterscotch” is in the given string.
+Example:
+LoveForIcecreams(“Butterscotch”)-&gt; 1
+LoveForIcecreams(“Butterscotch Butterscotch”) -&gt;2
+Note: Let the input string be of continuous letters like the above examples.
+
+
+
+
+Write a function “MyScottishAccent” which takes in a string and replaces every
+occurrence of “o” with “u”.
+Example:
+MyScottishAccent(“hello python coders”)-&gt;”hellu pythun cuders”
+MyScottishAccent(“computer geek”)-&gt;”cumputer geek”
+
+
+
+Write a function called “LinkConsonants” which takes a string and returns True if
+one word ends with a consonant and the adjacent starts with a consonant
+Example:
+LinkConsonant(“Fairy Tales”)-&gt;True(“Fairy” ends with consonant and “Tale” starts
+with Consonant)
+LinkConsonant(“Funny Faces”)-&gt;True (“Funny” ends with consonant and “Faces”
+starts with Consonant)
+LinkConsonant(“These are crazy”)-&gt;False (“These” does not end with consonant and
+“are” does not start with consonant)
+
+
+Write a function called “LonelyLetter” which returns the number of ‘O’s” which
+are lonely.  ‘O’ is lonely if it is not immediately followed by another ‘O’. See the
+example for better understanding of  “lonely”. 
+Example:
+LonelyLetter(Google)-&gt; 0
+LonelyLetter(Robins)-&gt;1
+LonelyLetter(Smoothie)-&gt;0
+LonelyLetter(Ozone)-&gt;2 (“O” is lonely twice)
+Note: You can take the input as a numbers also
+
+
