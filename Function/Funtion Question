@@ -1,0 +1,14 @@
+1. Write a function “PandamicSeason()” that takes a list and returns a string . Your
+input should be numbers having 1,2,3,4,5,6,7,8(zero and nine are not be included).
+Consider the following rules for returning the string
+
+ 1,2,3,4 = o,n,l,i, etc…
+ Add a dot (.) to the end.
+ Change case of the first letters in “Online” and “Classes”
+ Reverse the string
+Consider the example
+PandamicSeason([“1234256378858”])-&gt; &quot;OnlineClasses.&quot;
+Hint:
+OnlineClasses - 1,2,3,4 = o,n,l,i
+o-1,n-2,l-3,i-4,n-2,e-5,c-6,l-3,a-7,s-8,s-8,e-5,s-8
+1234256378858

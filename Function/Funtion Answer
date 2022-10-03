@@ -1,0 +1,23 @@
+def PandemicSeason(l):
+  di={1:'o',2:'n',3:'l',4:'i',5:'e',6:'c',7:'a',8:'s'}  #given dictionary
+  dk=list(di.keys())                                    #dictionary keys
+  s=""
+
+  for i in range(len(l)):
+    if(l[i]<1 or l[i]>=9):
+      s="Wrong Input"
+      return s
+    else:
+      for j in range(len(dk)):
+        if l[i]==dk[j]:
+          if(di[dk[j]]=='o' or di[dk[j]]=='c'):
+            s=s+di[dk[j]].upper()
+          else:
+            s=s+di[dk[j]]
+  s=s+'.'
+  return s
+
+m=[1,2,3,4,2,5,6,3,7,8,8,5,8]
+ans=PandemicSeason(m)
+print(ans)
+print(ans[::-1])
