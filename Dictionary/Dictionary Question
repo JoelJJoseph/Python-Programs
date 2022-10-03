@@ -1,0 +1,13 @@
+1.	Write a function “MyPassion()”which takes in a sentence (a minimum of 5 words) and returns back a dictionary indicating the “mode” of each word.  "mode" of a set of data is the data point that appears most frequently , mode of " Taradiddle" is "d".      Set of data can, in fact, have multiple modes, so "tomato” has “t”, ”o” as mode. Note that if all data appears the same number of times there is no mode, like in “dog”. 
+Also create and display a set that has modes and its frequencies
+Consider the following example:
+MyPassion(“tomato are redder”)-> {“tomato”:[“t”,”o”],”are”:[ ],”redder”:[ ]}
+
+
+
+
+2. Google’s “Did you mean…?” is the phrase which is prompted by the search engine when you enter a search item or mistype a word. 
+Write a function called “MySearchEngine” which takes in a lowercase string and a dictionary of lowercase strings. The task is to find, which word from the dictionary is most similar to the entered string. Similarity of words is described by the minimum number of letters you have to add, remove or replace to get from the dictionary (which is already created). The similarity is considered higher if the changes required are less. Extend the dictionary in a way, that it is able to return you the most similar word from the list of known words
+Example: 
+If the words in dictionary are 'cherry', 'pineapple', 'melon', 'strawberry', 'raspberry', then MySearchEngine (‘berry’) would return ‘cherry’
+
