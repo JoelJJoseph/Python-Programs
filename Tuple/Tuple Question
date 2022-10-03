@@ -1,0 +1,14 @@
+Consider the following list of tuples which represents the cost of a product, let’s say
+it is a laptop, and the list has brand name, additional number of features added to it,
+cost, and total tax on the product.
+[(‘Dell’, 5, 60,000, 4% of the cost), (‘Vivo’, 4, 57,000, 5% of the cost), (‘HP’,
+4, 59,000, 6% of the cost), (‘Samsung’, 3, 45,000, 3% of the cost)]
+Perform the following operations:
+a. Sort the list by increasing order of total price (cost + tax)
+b. Sort the list by decreasing order of cost (without tax)
+Note: conversion of list to tuple or tuple to list can be made wherever
+necessary
+c. Implement a function discount(), that takes Cost of a laptop and % of tax
+applied on the product. The function discount should compute and return the
+total cost. If the total cost is more than 60,000; then apply discount as 2% of
+total cost and display the cost estimated else return “No Discount applied.
